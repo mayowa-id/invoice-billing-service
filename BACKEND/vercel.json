@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm install",
+  "devCommand": "npm run dev",
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "MONGODB_DB": "@mongodb_db",
+    "JWT_SECRET": "@jwt_secret"
+  },
+  "functions": {
+    "src/index.js": {
+      "memory": 512,
+      "maxDuration": 10
+    }
+  }
+}
